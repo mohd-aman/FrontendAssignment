@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Collaboration Whiteboard</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        #whiteboard {
+            border: 2px solid #000;
+            margin-top: 20px;
+        }
+        #toolbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #toolbar > * {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Collaboration Whiteboard</h1>
+    <div id="toolbar">
+        <input type="color" id="colorPicker" value="#000000">
+        <button id="penTool">Pen</button>
+        <button id="eraserTool">Eraser</button>
+        <button id="clearCanvas">Clear Canvas</button>
+        <button id="downloadImage">Download Image</button>
+    </div>
+    <canvas id="whiteboard" width="800" height="600"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
